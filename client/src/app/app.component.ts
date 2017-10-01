@@ -5,7 +5,6 @@ import {$WebSocket} from 'angular2-websocket/angular2-websocket'
 import {INotification} from "./notification.model";
 import {WindowRef} from "./windowRef";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import 'rxjs/add/operator/do';
 
 declare const Favico: any;
 
