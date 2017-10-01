@@ -1,0 +1,16 @@
+.mat-chip.mat-green {
+  background-color: green;
+  color: white;
+  font-family: sans-serif;
+  font-size: x-small;
+  padding: 5px 9px;
+}
+
+.notification-list {
+  max-width: 500px;
+}
+
+.setting-toggle {
+  display: block;
+  padding: 5px 10px;
+}

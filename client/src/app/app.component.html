@@ -1,0 +1,17 @@
+<form [formGroup]="form">
+  <md-slide-toggle class="setting-toggle" formControlName="desktopNotificationsEnabled">
+    Enable desktop notifications
+  </md-slide-toggle>
+  <md-slide-toggle class="setting-toggle" formControlName="badgeEnabled">
+    Enable favicon badge
+  </md-slide-toggle>
+</form>
+
+<md-list class="notification-list">
+  <md-list-item *ngFor="let notification of notifications">
+    <p md-line>{{ notification.message }}</p>
+    <md-chip-list class="mat-chip-list" *ngIf="!notification.seen">
+      <md-chip color="green">new</md-chip>
+    </md-chip-list>
+  </md-list-item>
+</md-list>
